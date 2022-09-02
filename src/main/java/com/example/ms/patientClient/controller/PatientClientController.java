@@ -21,6 +21,10 @@ public class PatientClientController {
 	
 	@GetMapping("/getPatientDetails")
 	public String getPatientDetails() {
+		return "Test Patient";
+	}
+	@GetMapping("/getPatientDetailsWithCB")
+	public String getPatientDetailsWithCB() {
 		return patientService.getPatientDetails();
 	}
 }
